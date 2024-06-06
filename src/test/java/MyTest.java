@@ -99,7 +99,7 @@ public class MyTest {
     @Test
     public void testSection() {
         // Hacer clic en el enlace "pro-firmy"
-        driver.findElement(By.linkText("pro-firmy")).click();
+        driver.findElement(By.cssSelector("a[href='/pro-firmy']")).click();
 
         // Desplazarse hasta la sección con el título "Jakými výhodami MALL Pro usnadňuje podnikání?"
         WebElement section = driver.findElement(By.xpath("//h2[contains(text(),'Jakými výhodami MALL Pro usnadňuje podnikání?')]"));
